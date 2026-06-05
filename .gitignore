@@ -9,9 +9,10 @@
 !*.md
 !.gitignore
 
-# Keep Claude config
+# Keep Claude config, but not local/personal settings
 !.claude/
 !.claude/**
+.claude/settings.local.json
 
 # Never recurse into heavy / generated directories (overrides !*/ above)
 .venv/
