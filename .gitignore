@@ -1,0 +1,28 @@
+# Ignore everything by default...
+*
+
+# ...but let git descend into subdirectories to find allowlisted files
+!*/
+
+# Allowlist: source code, docs, and this file
+!*.py
+!*.md
+!.gitignore
+
+# Keep Claude config
+!.claude/
+!.claude/**
+
+# Never recurse into heavy / generated directories (overrides !*/ above)
+.venv/
+data/
+data_fineweb/
+logs/
+wandb/
+__pycache__/
+
+# Generated / data artifacts
+*.pyc
+*.bin
+*.parquet
+*.log

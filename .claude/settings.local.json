@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(nvidia-smi)",
+      "Bash(lspci)",
+      "Read(//dev/**)",
+      "Bash(lsmod)",
+      "Bash(nvcc --version)",
+      "Bash(python3 -m pip list)",
+      "Bash(python3 -m pip --version)",
+      "Bash(sudo -n true)",
+      "Bash(python3 -c \"import ensurepip; print\\('ensurepip OK'\\)\")",
+      "Bash(python3 -c \"import venv; print\\('venv OK'\\)\")",
+      "Read(//proc/driver/nvidia/**)",
+      "Bash(modinfo nvidia *)",
+      "Bash(sudo modprobe nvidia)",
+      "Bash(apt-cache policy *)",
+      "Bash(apt-cache search *)",
+      "Bash(sudo apt-get install -y linux-modules-nvidia-580-server-open-6.17.0-1018-gcp)",
+      "Bash(sudo depmod -a)",
+      "Bash(sudo apt-get install -y python3-pip python3-venv python3-dev)",
+      "Bash(dpkg -l)",
+      "Bash(awk '{print $2,$3}')",
+      "Bash(pkill -9 -f tokenize_fineweb.py)",
+      "Bash(awk '{printf \"%.0f MB  %s\\\\n\",$5/1e6,$9}')",
+      "Bash(awk 'NR==2{print \"used\",$3,\"avail\",$7}')"
+    ]
+  }
+}
