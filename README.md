@@ -4,7 +4,7 @@ Train a small (<300M) GPT language model with **NVFP4** 4-bit quantized GEMMs on
 **FineWeb-Edu**, following the recipe from NVIDIA's *Pretraining Large Language
 Models with NVFP4* (arXiv 2509.25149), and log the loss to Weights & Biases.
 
-📊 **W&B report: [Muon with NVFP4](https://wandb.ai/lzchen-ut/nvfp4-scale/reports/Muon-with-NVFP4--VmlldzoxNzEyNjk3MQ)**
+📊 **W&B report: [Muon with NVFP4](https://api.wandb.ai/links/lzchen-ut/xezttsbx)**
 
 ## What's here
 
@@ -58,5 +58,4 @@ python train.py --precision nvfp4 --quant_backward --hp_last_blocks 2 --optimize
 * NVFP4+**Muon** beats both NVFP4+AdamW and the bf16+AdamW reference: the optimizer gain outweighs the 4-bit quantization cost.
 * (NVFP4 is slower here only because 4-bit is *emulated* on Hopper.)
 
-Curves: https://wandb.ai/lzchen-ut/nvfp4-paper-aligned
-Full write-up: [Muon with NVFP4 (W&B report)](https://wandb.ai/lzchen-ut/nvfp4-scale/reports/Muon-with-NVFP4--VmlldzoxNzEyNjk3MQ)
+Full write-up: [Muon with NVFP4 (W&B report)](https://api.wandb.ai/links/lzchen-ut/xezttsbx)
